@@ -2,8 +2,7 @@ const express = require('express');
 const app = express();
 
 const mongoose = require('mongoose');
-
-
+mongoose.set('strictQuery', true);
 //Connection to mongoose
 mongoose.connect('mongodb+srv://root:root@cluster0.025ka.mongodb.net/?retryWrites=true&w=majority',
     {   dbName:'booking',
@@ -18,21 +17,56 @@ app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH, OPTIONS');
     next();
 });
-app.use((req, res) => {
-    res.json( {message :'Voilà la reponse du serveur !'});
-})
 
-//User
+app.use(express.json())
 
 const User = require('./models/user');
-const add_user=app.post('/api/user', async (req, res, next) => {
-    delete req.body._id;
+
+//Todo : revoir la gestion des erreurs
+app.post('/api/user/add', async(req, res, next) => {
+    //delete req.body._id;
     const user = await new User({
-        ...req.body
+        name:"giorgio",
+        firstname:"dimartino"
     });
     user.save()
-        .then(() => res.status(201).json({ message: 'Objet enregistré !'}))
+        .then(() => res.status(201).json({ message: 'user created !'}))
         .catch(error => res.status(400).json({ error }));
+});
+
+app.delete('/api/user/delete/:id', async(req, res, next) => {
+    await User.deleteOne({id:req.params.id})
+        .then(() => res.status(204).json({ message: 'user deleted !'}))
+        .catch(error => res.status(501).json({ error }));
+});
+
+app.get('/api/users', async(req, res, next) => {
+    const users=await User.find()
+        .then(users => res.status(200).json(users))
+        .catch(error => res.status(501).json({ error }));
+});
+
+app.get('/api/user/:id', async(req, res) => {
+    try{
+        let user=await User.findOne({id:req.params.id});
+        if (user){
+            return res.status(200).json(user);
+        }
+        res.status(404).json({ message: 'user not found !'})
+    } catch(error){
+        res.status(501).json({ message : error })
+    }
+});
+
+
+app.put('/api/user/update/:id', async(req, res) => {
+    const user=await User.updateOne({id:req.params.id},
+        {
+            name: "vanier",
+            firstname: "pascal"
+        })
+        .then(()=> res.status(201).json({ message: 'user up-to-date  !'}))
+        .catch(error => res.status(501).json({ error }));
 });
 
 
