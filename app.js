@@ -18,17 +18,13 @@ app.use((req, res, next) => {
     next();
 });
 
-app.use(express.json())
+app.use(express.json());
 
 const User = require('./models/user');
-
 //Todo : revoir la gestion des erreurs
 app.post('/api/user/add', async(req, res, next) => {
     //delete req.body._id;
-    const user = await new User({
-        name:"giorgio",
-        firstname:"dimartino"
-    });
+    const user = await new User(req.body);
     user.save()
         .then(() => res.status(201).json({ message: 'user created !'}))
         .catch(error => res.status(400).json({ error }));
@@ -60,14 +56,21 @@ app.get('/api/user/:id', async(req, res) => {
 
 
 app.put('/api/user/update/:id', async(req, res) => {
-    const user=await User.updateOne({id:req.params.id},
-        {
-            name: "vanier",
-            firstname: "pascal"
-        })
+    const user=await User.updateOne({id:req.params.id}, req.body)
         .then(()=> res.status(201).json({ message: 'user up-to-date  !'}))
         .catch(error => res.status(501).json({ error }));
 });
 
+app.patch('/api/user/patch/:id', async(req, res) => {
+
+    await User.findByIdAndUpdate(req.params.id, req.body, {new: true}).then((user) => {
+        if (!user) {
+            return res.status(404).send();
+        }
+        res.send.json(user);
+    }).catch((error) => {
+        res.status(501).send(error);
+    })
+});
 
 module.exports = app;
