@@ -37,11 +37,11 @@ exports.signup= (req, res, next) => {
     })
 }
 
-/*
+
 exports.login= async(req, res, next) => {
     User.findOne({email:req.body.login})
 }
-*/
+
 exports.getAllUser= async(req, res, next) => {
     const users = await User.find()
         .then(users => res.status(200).json(users))
