@@ -4,6 +4,8 @@ const router = express.Router();
 const userCtrl = require('../controllers/user');
 
 router.post('/signup',userCtrl.signup);
+router.post('/login',userCtrl.login);
+
 router.get('/all',userCtrl.getAllUser);
 router.delete('/delete/:id',userCtrl.deleteUser);
 router.post('/add',userCtrl.createUser);
