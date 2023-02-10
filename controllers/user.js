@@ -8,7 +8,6 @@ const {hash} = require("bcrypt");
 //todo : validate email | npm install express-validator
 
 exports.signup= (req, res, next) => {
-
     User.findOne({email:req.body.email },function(err,user){
         if(err){
             console.log(err.message)
