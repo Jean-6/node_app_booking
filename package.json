@@ -1,0 +1,46 @@
+{
+  "name": "node_app_booking",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jean-6/node_app_booking.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jean-6/node_app_booking/issues"
+  },
+  "homepage": "https://github.com/Jean-6/node_app_booking#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.1",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.1.1",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-async-errors": "^3.1.1",
+    "handlebars": "^4.7.7",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^6.9.1",
+    "mongoose-errors": "^1.1.3",
+    "mongoose-unique-validator": "^3.1.0",
+    "nodemailer": "^6.9.1",
+    "nodemon": "^2.0.20",
+    "randombytes": "^2.1.0",
+    "s3-node": "^0.0.1"
+  },
+  "devDependencies": {
+    "jest": "^29.4.2",
+    "supertest": "^6.3.3"
+  },
+  "jest": {
+    "testMatch": [
+      "/test/*.test.js"
+    ]
+  }
+}
