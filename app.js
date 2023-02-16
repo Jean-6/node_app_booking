@@ -1,6 +1,14 @@
 const express = require('express');
 const app = express();
 
+/*--- Passeport dependencies  for logout routes
+User = require("./models/user");
+
+LocalStrategy = require("passport-local");
+passportLocalMongoose = require("passport-local-mongoose");
+*/
+
+
 const mongoose = require('mongoose');
 mongoose.set('strictQuery', true);
 //Connection to mongoose
