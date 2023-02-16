@@ -20,8 +20,10 @@ app.use((req, res, next) => {
 
 app.use(express.json());
 
-const userRoutes = require ('./routes/user')
-app.use('/api/user',userRoutes)
+const userRoutes = require ('./routes/user');
+const authRoutes = require ('./routes/auth');
+app.use('/api/auth',authRoutes);
+app.use('/api/user',userRoutes);
 
 
 module.exports = app;
