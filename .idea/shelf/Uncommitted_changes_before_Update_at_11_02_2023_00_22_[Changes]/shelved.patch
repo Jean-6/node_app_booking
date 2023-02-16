@@ -1,0 +1,30 @@
+Index: app.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>const express = require('express');\r\nconst app = express();\r\n\r\nconst mongoose = require('mongoose');\r\nmongoose.set('strictQuery', true);\r\n//Connection to mongoose\r\nmongoose.connect('mongodb+srv://root:root@cluster0.025ka.mongodb.net/?retryWrites=true&w=majority',\r\n    {   dbName:'booking',\r\n        useNewUrlParser: true,\r\n        useUnifiedTopology: true })\r\n    .then(() => console.log('Connexion à MongoDB réussie !'))\r\n    .catch(() => console.log('Connexion à MongoDB échouée !'));\r\n\r\napp.use((req, res, next) => {\r\n    res.setHeader('Access-Control-Allow-Origin', '*');\r\n    res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content, Accept, Content-Type, Authorization');\r\n    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH, OPTIONS');\r\n    next();\r\n});\r\n\r\napp.use(express.json());\r\n\r\nconst userRoutes = require ('./routes/user')\r\napp.use('/api/user',userRoutes)\r\n\r\n\r\nmodule.exports = app;
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app.js b/app.js
+--- a/app.js	(revision a81d18cd15331c5e6d1311b000220dd8c8ab14dd)
++++ b/app.js	(date 1676062252424)
+@@ -21,6 +21,7 @@
+ app.use(express.json());
+ 
+ const userRoutes = require ('./routes/user')
++
+ app.use('/api/user',userRoutes)
+ 
+ 
+Index: .dockerignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.dockerignore b/.dockerignore
+new file mode 100644
+--- /dev/null	(date 1675960691529)
++++ b/.dockerignore	(date 1675960691529)
+@@ -0,0 +1,1 @@
++node_modules
+\ No newline at end of file

@@ -50,9 +50,6 @@ exports.updateUserById= async(req, res) => {
 }
 exports.updatePartUserById=async(req, res) => {
 
-    console.log("update part user by id");
-    console.log("req.param.id : "+req.params.id);
-    console.log("req.body : "+req.body.name + req.body.firstname);
 
     const user=await User.findByIdAndUpdate(req.params.id, req.body, {new: true}).then((user) => {
         if (!user) {

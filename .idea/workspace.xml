@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8896e058-018f-47af-9c25-5b1db6cc30c9" name="Changes" comment="added authentication middleware and token model">
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_02_2023_00_22_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_02_2023_00_22__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/secret/privateKey" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package.json" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="origin/main" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SWAP_SIDES_IN_COMPARE_BRANCHES" value="true" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="eba65a41-2756-4ac5-aa30-960f6a99bb33" />
+        <option name="url" value="https://github.com/Jean-6/node_app_booking.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2KbrOvNtwESp1SHJatMh03v1T5p" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "javascript.nodejs.core.library.configured.version": "19.4.0",
+    "javascript.nodejs.core.library.typings.version": "18.11.18",
+    "last_opened_file_path": "C:/Users/User/WebstormProjects/node_api_pa",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\WebstormProjects\node_app_booking\controllers" />
+      <recent name="C:\Users\User\WebstormProjects\node_app_booking\models" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\WebstormProjects\node_app_booking\secret" />
+      <recent name="C:\Users\User\WebstormProjects\node_app_booking" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8896e058-018f-47af-9c25-5b1db6cc30c9" name="Changes" comment="" />
+      <created>1674254094440</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1674254094440</updated>
+      <workItem from="1674254096696" duration="787000" />
+      <workItem from="1674463430155" duration="9251000" />
+      <workItem from="1674502557685" duration="638000" />
+      <workItem from="1674503229431" duration="11000" />
+      <workItem from="1674689806246" duration="2492000" />
+      <workItem from="1674825440808" duration="15034000" />
+      <workItem from="1674949170612" duration="117000" />
+      <workItem from="1674949558754" duration="6956000" />
+      <workItem from="1675174687590" duration="11365000" />
+      <workItem from="1675254892912" duration="1930000" />
+      <workItem from="1675318770973" duration="1785000" />
+      <workItem from="1675328323590" duration="4284000" />
+      <workItem from="1675334622117" duration="3891000" />
+      <workItem from="1675885756601" duration="3959000" />
+      <workItem from="1676059928124" duration="17033000" />
+      <workItem from="1676292017316" duration="7927000" />
+      <workItem from="1676360782407" duration="1259000" />
+      <workItem from="1676363203749" duration="7783000" />
+      <workItem from="1676381054867" duration="8513000" />
+      <workItem from="1676389693784" duration="2030000" />
+      <workItem from="1676409432126" duration="8757000" />
+      <workItem from="1676454786569" duration="15225000" />
+      <workItem from="1676497884584" duration="392000" />
+      <workItem from="1676498297626" duration="6211000" />
+    </task>
+    <task id="LOCAL-00001" summary="Initialisation du serveur node (server.js)&#10;Creation d'application express (app.js)">
+      <created>1674473978926</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1674473978926</updated>
+    </task>
+    <task id="LOCAL-00002" summary="-m &quot;Initialisation du serveur node (server.js)&quot;&#10;-m &quot;Creation d'application express (app.js)&quot;">
+      <created>1674474675512</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1674474675512</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Normalisation du port avec normalizePort">
+      <created>1674691381823</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1674691381823</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Normalisation du port avec normalizePort et gestion des erreurs">
+      <created>1674691478263</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1674691478263</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Ajout d'un ecouteur d'evenements consignant le port ou le canal nomme">
+      <created>1674691668409</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1674691668409</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Creation du Dockerfile pour la conteneurisation de notre API">
+      <created>1674832947726</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1674832947726</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Creation du schema User">
+      <created>1674832998838</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1674832998838</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Connexion de notre API à notre cluster MongoDB">
+      <created>1674833934177</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1674833934177</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Mise en place des middleware (post - get - delete - put) pour le user">
+      <created>1674842390599</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1674842390599</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Ajout (patch) et optimisation de middleware (post - delete - update) pour le user">
+      <created>1674954031732</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1674954031732</updated>
+    </task>
+    <task id="LOCAL-00011" summary="backend optimization by adding controllers and routes">
+      <created>1675332758429</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1675332758429</updated>
+    </task>
+    <task id="LOCAL-00012" summary="add signup middleware">
+      <created>1676070799819</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1676070799819</updated>
+    </task>
+    <task id="LOCAL-00013" summary="change user schema - add email , login and password field">
+      <created>1676070955058</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1676070955058</updated>
+    </task>
+    <task id="LOCAL-00014" summary="add signup middleware with user existence check">
+      <created>1676071357078</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1676071357078</updated>
+    </task>
+    <task id="LOCAL-00015" summary="add signup middleware with user existence check">
+      <created>1676071898726</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1676071898726</updated>
+    </task>
+    <task id="LOCAL-00016" summary="add signup middleware with user existence check">
+      <created>1676072072517</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1676072072517</updated>
+    </task>
+    <task id="LOCAL-00017" summary="add signup middleware with user existence check">
+      <created>1676072104528</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1676072104528</updated>
+    </task>
+    <task id="LOCAL-00018" summary="add signup middleware with user existence check">
+      <created>1676072138290</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1676072138290</updated>
+    </task>
+    <task id="LOCAL-00019" summary="add signup middleware with user existence check">
+      <created>1676072214515</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1676072214515</updated>
+    </task>
+    <task id="LOCAL-00020" summary="add login middleware">
+      <created>1676072367830</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1676072367830</updated>
+    </task>
+    <task id="LOCAL-00021" summary="add login middleware">
+      <created>1676072485110</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1676072485110</updated>
+    </task>
+    <task id="LOCAL-00022" summary="add login middleware">
+      <created>1676072675080</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1676072675080</updated>
+    </task>
+    <task id="LOCAL-00023" summary=" login middleware rewritting with error handling">
+      <created>1676297003809</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1676297003809</updated>
+    </task>
+    <task id="LOCAL-00024" summary=" login middleware rewritting with error handling">
+      <created>1676297304780</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1676297304780</updated>
+    </task>
+    <task id="LOCAL-00025" summary=" login middleware rewritting with error handling 2">
+      <created>1676297601819</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1676297601819</updated>
+    </task>
+    <task id="LOCAL-00026" summary=" adding route of reset password and authentification                     token handling in signup middleware">
+      <created>1676415892766</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1676415892766</updated>
+    </task>
+    <task id="LOCAL-00027" summary=" adding route of reset password and authentification                     token handling in signup middleware">
+      <created>1676415927299</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1676415927299</updated>
+    </task>
+    <task id="LOCAL-00028" summary="fixup!  adding route of reset password and authentification                     token handling in signup middleware">
+      <created>1676416064781</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1676416064781</updated>
+    </task>
+    <task id="LOCAL-00029" summary="configurate nodemail to init password by email">
+      <created>1676496883801</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1676496883801</updated>
+    </task>
+    <task id="LOCAL-00030" summary="configurate nodemail to init password by email">
+      <created>1676497080042</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1676497080042</updated>
+    </task>
+    <task id="LOCAL-00031" summary="added authentication middleware and token model">
+      <created>1676537034994</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1676537034994</updated>
+    </task>
+    <task id="LOCAL-00032" summary="added authentication middleware and token model">
+      <created>1676537581777</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1676537581777</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/main" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initialisation du serveur node (server.js)&#10;- Creation d'application express (app.js)" />
+    <MESSAGE value="-m &quot;Initialisation du serveur node (server.js)&quot;&#10;-m &quot;Creation d'application express (app.js)&quot;" />
+    <MESSAGE value="Normalisation du port avec normalizePort" />
+    <MESSAGE value="Normalisation du port avec normalizePort et gestion des erreurs" />
+    <MESSAGE value="Ajout d'un ecouteur d'evenements consignant le port ou le canal nomme" />
+    <MESSAGE value="Creation du Dockerfile pour la conteneurisation de notre API" />
+    <MESSAGE value="Creation du schema User" />
+    <MESSAGE value="Connexion de notre API à notre cluster MongoDB" />
+    <MESSAGE value="Mise en place des middleware (post - get - delete - put) pour le user" />
+    <MESSAGE value="Ajout (patch) et optimisation de middleware (post - delete - update) pour le user" />
+    <MESSAGE value="backend optimization by adding controllers and routes" />
+    <MESSAGE value="add signup middleware" />
+    <MESSAGE value="change user schema - add email , login and password field" />
+    <MESSAGE value="add signup middleware with user existence check" />
+    <MESSAGE value="add login middleware" />
+    <MESSAGE value=" login middleware rewritting with error handling" />
+    <MESSAGE value=" login middleware rewritting with error handling 2" />
+    <MESSAGE value=" adding route of reset password and authentification                     token handling in signup middleware" />
+    <MESSAGE value="fixup!  adding route of reset password and authentification                     token handling in signup middleware" />
+    <MESSAGE value="configurate nodemail to init password by email" />
+    <MESSAGE value="added authentication middleware and token model" />
+    <option name="LAST_COMMIT_MESSAGE" value="added authentication middleware and token model" />
+  </component>
+</project>
