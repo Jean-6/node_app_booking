@@ -8,7 +8,7 @@ var logout = require('express-passport-logout');
 
 
 function getRandoSecretKey(){
-    const key = fs.readFileSync('./secret/privateKey', {encoding:'utf8', flag:'r'});
+    const key = fs.readFileSync('./secret/sensitive.key', {encoding:'utf8', flag:'r'});
     return key;
 }
 
@@ -94,7 +94,7 @@ exports.login= async(req, res, next) => {
                             function (err, token){
                             console.log("token generated at login :"+token)
                         })
-                        /*token:jwt.sign({userId:user._id}, 'privateKey', { algorithm: 'RS256' }, function(err, token) {
+                        /*token:jwt.sign({userId:user._id}, 'sensitive.key', { algorithm: 'RS256' }, function(err, token) {
                             console.log(token);
                         })*/
                         //return res.redirect('/') //todo : to replace with right URL to redirect

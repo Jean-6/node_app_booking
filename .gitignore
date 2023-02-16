@@ -41,8 +41,8 @@ build/Release
 node_modules/
 jspm_packages/
 
-# Secret
-secret
+# ignore all files containing extensions
+*.key
 
 # TypeScript v1 declaration files
 typings/
